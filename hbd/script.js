@@ -107,26 +107,36 @@ function getRandomPosition(element) {
   return [randomX, randomY];
 };
 
-const _slideEmpat = function() {
+const _slideEmpat = function () {
   const slideEmpat = document.getElementById('slideEmpat');
-  const btn = document.getElementsByTagName('button');
+  const btnGak = document.getElementById('gak');
+  const btnSuka = document.getElementById('suka');
+  const pesanHadiah = document.getElementById('pesanHadiah');
+
   slideEmpat.classList.remove('d-none');
 
-  btn[0].addEventListener('click', function() {
-    var xy = getRandomPosition(slideEmpat);
+  btnGak.addEventListener('click', function () {
+    const xy = getRandomPosition(slideEmpat);
     slideEmpat.style.top = xy[0] + 'px';
+    slideEmpat.style.left = xy[1] + 'px';
   });
 
-  btn[1].addEventListener('click', function() {
-    slideEmpat.classList.replace('animate__fadeInDown', 'animate__bounceOut');
-    slideEmpat.classList.remove('animate__delay-2s');
-    setTimeout(function() {
-      slideEmpat.remove()
-      setTimeout(() => {
+  btnSuka.addEventListener('click', function () {
+    // Tampilkan pesan "hadiahnya nyusul"
+    pesanHadiah.classList.remove('d-none');
+    pesanHadiah.classList.add('animate__fadeIn');
+
+    // Setelah 2 detik, lanjut ke slide berikutnya
+    setTimeout(function () {
+      slideEmpat.classList.replace('animate__fadeInDown', 'animate__bounceOut');
+      slideEmpat.classList.remove('animate__delay-2s');
+
+      setTimeout(function () {
+        slideEmpat.remove();
         _slideLima();
-      }, 500);
-    }, 1000);
-  })
+      }, 1000);
+    }, 2000);
+  });
 };
 
 const _slideLima = function() {
@@ -474,5 +484,4 @@ function confetti() {
   });
 
   if (!onlyOnKonami) poof();
-
 };
