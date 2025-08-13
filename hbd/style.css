@@ -1,0 +1,324 @@
+body,
+html {
+  height: 100%;  
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.bg {
+  background-image: url(./img/123.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #FEC0CD;
+  height: 100%;
+  position: relative;
+}
+
+.img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 20px;
+  margin-bottom: 30px;
+  width: 350px;
+  filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.5));
+}
+
+#tap {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* Paper */
+.paper {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  min-width: 300px;
+  height: 540px;
+  margin: 50px auto;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  background: #fffaf0;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(214, 41, 119, 0.3);
+  overflow: hidden;
+  border: 1px solid #ffcce0;
+}
+
+.paper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  width: 45px;
+  background: radial-gradient(#ff9ec0 6px, transparent 7px) repeat-y;
+  background-size: 30px 30px;
+  border-right: 3px solid #ff6b9c;
+  box-sizing: border-box;
+}
+
+.paper-content {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  bottom: 30px;
+  left: 50px;
+  background: linear-gradient(transparent, transparent 28px, #ffeaf4 28px);
+  background-size: 30px 30px;
+}
+
+.paper-content .teks {
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  line-height: 30px;
+  padding: 0 20px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #6a0dad;
+  font-family: 'Handlee', cursive;
+  font-size: 19px;
+  box-sizing: border-box;
+  z-index: 1;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.kotak {
+  position: relative;
+  width: 90%;
+  max-width: 550px;
+  min-width: 200px;
+  max-height: 350px;
+  min-height: 100px;
+  top: 300px;
+  padding: 20px 0;
+  display: inline-block;
+  background: #fffaf0;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(214, 41, 119, 0.3);
+  overflow: hidden;
+  border: 1px solid #ffcce0;
+}
+
+.btn {
+  border-radius: 40px;
+  font-weight: 500;
+  padding: 8px 20px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+#slideLima {
+  position: relative;
+  top: 300px;
+  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.3));
+}
+
+#trims {
+  position: relative;
+  top: 300px;
+  display: inline-block;
+  font-size: 24px;
+  color: #6a0dad;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  display: inline-block;
+  font-size: 16px;
+  list-style-type: none;
+  position: relative;
+  left: -20px;
+  margin-top: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin: 10px;
+  min-width: 80px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+li span {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #d63384;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container {
+  color: #6a0dad;
+  position: relative;
+  top: 250px;
+  padding: 0;
+  text-align: center;
+  background: rgba(255, 250, 240, 0.85);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 700px;
+  box-shadow: 0 10px 30px rgba(214, 41, 119, 0.2);
+}
+
+/* Foto dan balon */
+#slideEnam {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: 70vh;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
+  animation: photoAppear 1s ease-out forwards;
+}
+
+.birthday-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.balloons-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.balloon {
+  position: absolute;
+  width: 80px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6b9c, #ffcc00, #00ccff, #cc00ff);
+  animation: float 8s ease-in-out infinite;
+  box-shadow: inset -10px -10px 20px rgba(0,0,0,0.1),
+              0 5px 15px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.balloon:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 2px;
+  height: 50px;
+  background: linear-gradient(to bottom, #ffcc00, #ff9966);
+  transform: translateX(-50%);
+}
+
+.balloon1 {
+  top: -100px;
+  left: 10%;
+  animation-delay: 0s;
+  background: linear-gradient(135deg, #ff6b9c, #ff3366);
+}
+
+.balloon2 {
+  top: -100px;
+  left: 30%;
+  animation-delay: 1s;
+  background: linear-gradient(135deg, #00ccff, #0066ff);
+}
+
+.balloon3 {
+  top: -100px;
+  left: 50%;
+  animation-delay: 2s;
+  background: linear-gradient(135deg, #cc00ff, #9900cc);
+}
+
+.balloon4 {
+  top: -100px;
+  left: 70%;
+  animation-delay: 3s;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+}
+
+.balloon5 {
+  top: -100px;
+  left: 90%;
+  animation-delay: 4s;
+  background: linear-gradient(135deg, #66ff66, #00cc66);
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(20px) rotate(10deg);
+    opacity: 0;
+  }
+}
+
+@keyframes photoAppear {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
