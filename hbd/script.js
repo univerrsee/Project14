@@ -187,7 +187,7 @@ new TypeIt("#teks1", {
 
 new TypeIt("#teks2", {
   strings: [
-    "Semoga semesta selalu membahagiakan kamu bagimanapun caranya.",
+    "Semoga semesta selalu membahagiakan kamu bagaimanapun caranya.",
     " ",
     "- Wish all you the best, Pujel 😄",
     " ",
@@ -474,4 +474,5 @@ function confetti() {
   });
 
   if (!onlyOnKonami) poof();
+
 };
